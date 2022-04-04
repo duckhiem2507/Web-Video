@@ -1,0 +1,36 @@
+.videocontent{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(49, 49, 49);
+}
+.icon{
+  color: antiquewhite;
+  font-size: 20px;
+  text-decoration: none;
+  position:absolute ;
+  bottom: 10px;
+}
+.icon-play-sign{
+  font-size: 35px;
+}
+.icon-play-sign:hover{
+  font-size: 38px;
+  color: aqua;
+}
+
+.video {
+  color:antiquewhite;
+  width: 280px;
+  height: 330px;
+  margin: 0px 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #202020;
+  box-shadow: 10px 10px 20px 00px rgb(26, 25, 24);
+  transition-duration: 0.3s;
+  cursor: pointer;
+  margin-bottom: 20px;
+}

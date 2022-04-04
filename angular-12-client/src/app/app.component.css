@@ -1,0 +1,17 @@
+.nav{
+  background-color: black;
+  height: 60px;
+  width:100%;
+  line-height: 60px;
+}
+.navlink{
+  color: antiquewhite;
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-decoration: none;
+  padding-left: 25px;
+}
+.navbar{
+  font-weight: 600;
+}

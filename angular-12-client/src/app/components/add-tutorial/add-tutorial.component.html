@@ -1,0 +1,54 @@
+<div>
+  <div class="submit-form">
+    <div *ngIf="!submitted">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input
+          class="form-control"
+          id="title"
+          required
+          [(ngModel)]="tutorial.name"
+          name="title"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input
+          class="form-control"
+          id="description"
+          required
+          [(ngModel)]="tutorial.description"
+          name="description"
+        />
+      </div>
+      <div class="form-group">
+        <label for="background_image">Link Image</label>
+        <input
+          class="form-control"
+          id="background_image"
+          required
+          [(ngModel)]="tutorial.background_image"
+          name="background_image"
+        />
+      </div>
+      <div class="form-group">
+        <label for="url_video">Link Image</label>
+        <input
+          class="form-control"
+          id="url_video"
+          required
+          [(ngModel)]="tutorial.url_video"
+          name="url_video"
+        />
+      </div>
+
+      <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
+    </div>
+
+    <div *ngIf="submitted">
+      <h4>Tutorial was submitted successfully!</h4>
+      <button class="btn btn-success" (click)="newTutorial()">Add</button>
+    </div>
+  </div>
+</div>

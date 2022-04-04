@@ -1,0 +1,60 @@
+<div>
+  <div *ngIf="currentTutorial.id" class="edit-form">
+    <h4>Tutorial</h4>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input
+          class="form-control"
+          id="title"
+          [(ngModel)]="currentTutorial.name"
+          name="title"
+        />
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input
+          class="form-control"
+          id="description"
+          [(ngModel)]="currentTutorial.description"
+          name="description"
+        />
+      </div>
+      <div class="form-group">
+        <label for="background_image">Link Image</label>
+        <input
+          class="form-control"
+          id="background_image"
+          [(ngModel)]="currentTutorial.background_image"
+          name="background_image"
+        />
+      </div>
+      <div class="form-group">
+        <label for="url_video">Link Video</label>
+        <input
+          class="form-control"
+          id="url_video"
+          [(ngModel)]="currentTutorial.url_video"
+          name="url_video"
+        />
+      </div>
+    </form>
+    <button class="badge badge-danger mr-2" (click)="deleteTutorial()">
+      Delete
+    </button>
+
+    <button
+      type="submit"
+      class="badge badge-success mb-2"
+      (click)="updateTutorial()"
+    >
+      Update
+    </button>
+    <p>{{ message }}</p>
+  </div>
+
+  <div *ngIf="!currentTutorial.id">
+    <br />
+    <p>Cannot access this Tutorial...</p>
+  </div>
+</div>

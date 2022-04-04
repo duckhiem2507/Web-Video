@@ -1,0 +1,16 @@
+
+<div class="videocontent">
+  <div *ngFor="let video of Videos">
+    <div class="card video" style="width: 18rem;">
+      <img class="card-img-top" src="{{video.background_image}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{video.name}}</h5>
+        <p class="card-text">{{video.description}}</p>
+        <a href="{{video.url_video}}" class="icon mbt-2"><i class="icon-play-sign"></i><i class="icon-th-large ml-3"></i><i class="icon-foursquare ml-1"></i> </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
